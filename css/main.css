@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+#content {
+    flex: 1;
+}
+
+
+footer{
+    /* border:1px solid red; */
+    
+}
+#header{
+    border:1px solid black;
+    
+}
+#content{
+    margin-bottom:10%;
+    height:95%;
+}
+
+.navbar-brand span{
+    font-weight:600;
+    font-family: serif;
+    padding:0.5em;
+}
+#primary{
+    margin-top:10%;
+}
+#primary-content{
+    text-align: center;
+}
+
+#secondary{
+    margin-top:5%;
+    text-align: center;
+}
+.figure{
+    padding:3%;
+}
+.navbar li a {
+    font-family:  'Lato', sans-serif;
+    padding:1em;
+}
+ul.nav li.dropdown:hover ul.dropdown-menu{
+    display: block;    
+}
+
+
+#aboutImage{
+    margin-top:2em;
+}
