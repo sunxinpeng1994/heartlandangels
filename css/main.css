@@ -39,11 +39,12 @@ footer{
 }
 
 #secondary{
-    margin-top:5%;
+    margin-top:3%;
     text-align: center;
 }
 .figure{
     padding:3%;
+    /* border:1px green dashed; */
 }
 .navbar li a {
     font-family:  'Lato', sans-serif;
@@ -55,5 +56,22 @@ ul.nav li.dropdown:hover ul.dropdown-menu{
 
 
 #aboutImage{
-    margin-top:2em;
+    margin:3em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    clear: both;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+h1 {
+    font-size: 24px;
+    font-size: 2.4rem;
+    line-height: 1;
+    margin-bottom: 1em;
+}
+p{
+    font-family: inherit;
 }
