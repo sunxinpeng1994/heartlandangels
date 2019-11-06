@@ -75,3 +75,7 @@ h1 {
 p{
     font-family: inherit;
 }
+
+#teamAll img:hover{
+    opacity: 0.3;
+}
