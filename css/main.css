@@ -44,6 +44,7 @@ footer{
 }
 .figure{
     padding:3%;
+    /* border:1px solid green; */
     /* border:1px green dashed; */
 }
 .navbar li a {
@@ -79,12 +80,32 @@ p{
 #teamAll img:hover{
     opacity: 0.3;
 }
+#portfolio-imgs img:hover{
+    opacity: 0.3;
+}
+#secondary img:hover{
+    opacity: 0.7;
+}
 
 .article{
     margin:auto; 
     width:61.8%; 
     padding:3%;
+    /* border:1px solid; */
 }
 .navbar{
     min-height:17.5%;
+}
+.pageTitle{
+    width:61.8%; 
+    /* padding:1%; */
+    margin:auto; 
+    margin-top:3em;
+    /* border:1px solid; */
+}
+
+#portfolio-imgs .figure{
+    padding:0;
+    padding-right:3%;
+    padding-bottom:3%;
 }
