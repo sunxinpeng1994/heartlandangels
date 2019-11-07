@@ -50,6 +50,7 @@ footer{
 .navbar li a {
     font-family:  'Lato', sans-serif;
     padding:1.5em;
+    margin-right:1em;
 }
 ul.nav li.dropdown:hover ul.dropdown-menu{
     display: block;    
@@ -109,3 +110,47 @@ p{
     padding-right:3%;
     padding-bottom:3%;
 }
+
+
+
+/* adjustment for mobile screen */
+@media only screen and (max-width: 800px) {
+    .article{
+        margin:auto; 
+        width:70%; 
+        padding:2%;
+        /* border:1px solid; */
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
