@@ -48,7 +48,7 @@ footer{
 }
 .navbar li a {
     font-family:  'Lato', sans-serif;
-    padding:1em;
+    padding:1.5em;
 }
 ul.nav li.dropdown:hover ul.dropdown-menu{
     display: block;    
@@ -84,4 +84,7 @@ p{
     margin:auto; 
     width:61.8%; 
     padding:3%;
+}
+.navbar{
+    min-height:17.5%;
 }
