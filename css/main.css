@@ -79,3 +79,9 @@ p{
 #teamAll img:hover{
     opacity: 0.3;
 }
+
+.article{
+    margin:auto; 
+    width:61.8%; 
+    padding:3%;
+}
