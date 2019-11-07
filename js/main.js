@@ -12,6 +12,3 @@ $(".dropdown-item").click(function () {
     window.location = $(this).attr('href');
 });
 
-$("#ttt").click(function(){
-    alert("ppp");
-});
