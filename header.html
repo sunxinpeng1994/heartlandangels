@@ -1,9 +1,18 @@
 <div id="header">
+    <script>
+        $('ul li.dropdown').hover(function() {
+            // console.log("works")
+            $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeIn(50);
+            }, function() {
+            $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeOut(50);
+        });
+        
+        </script>
         <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-secondary">
             <a class="navbar-brand" href="./index.html">
                 <img src="./img/logo-large.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
-                <span id="company_name" >HEARTLANDANGELS</span>
+                <span id="company_name" >HEARTLAND ANGELS</span>
                 <!-- <img src="./img/logo-companyName.jpg" alt="" height="60"   class="d-inline-block align-top"> -->
             </a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
