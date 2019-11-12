@@ -33,18 +33,32 @@
                     <p>If you want to apply for funding, please go to <a href="https://gust.com/organizations/heartland-angels/funding_applications/responses/new" target="_blank" style="color:#7d4e07 !important;text-decoration:underline;"><b>Guest.</b></a></p>
                     <p>For all other inquiries, please fill out this form to contact Heartland Angels.</p>
                     <p>Give Your Feedback!</p>
-                    <form action="">
+                    <form action="" style="width:75%;" class="needs-validation">
+                        <!-- <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                        <label for="lastName">LastName</label>
+                                        <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Enter your name">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="firstName">FirstName</label>
+                                    <input type="text" class="form-control" name="firstName" id="firstName" placeholder="Enter your name">
+                                </div>
+                            </div>
+                        </div> -->
                         <div class="form-group">
                                 <label for="username">Name</label>
-                                <input type="text" class="form-control" name="username" id="username" placeholder="Enter your name">
+                                <input type="text" class="form-control" name="username" id="username" placeholder="Enter your name" required>
                         </div>
                         <div class="form-group">
                                 <label for="userEmail">Email</label>
-                                <input type="email" class="form-control" name="userEmail" id="userEmail" placeholder="Enter your email">
+                                <input type="email" class="form-control" name="userEmail" id="userEmail" placeholder="Enter your email" required>
                         </div>
                         <div class="form-group">
                                 <label for="reasonForEnquiry">Reson for Enquiry</label>
-                                <select name="subject" id="reasonForEnquiry" class="form-control" >
+                                <select name="reason" id="reasonForEnquiry" class="form-control" >
                                         <option value="Accredited Membership">Accredited Membership</option>
                                         <option value="Non-accredited Membership">Non-accredited Membership</option>
                                         <option value="Attend a Meeting">Attend a Meeting</option>
@@ -53,7 +67,11 @@
                                         <option value="Other">Other</option>
                                 </select>
                         </div>
-                        
+                        <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Comment</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send</button>
                               
                     </form>
             
@@ -65,5 +83,16 @@
     <!-- Footer -->
     <div id="footerDiv"></div>
      
+
+    <script>
+        // var form = document.querySelector('.need-validation');
+        // form.addEventListener('submit', function(event) {
+        //     if(form.checkValidity() == false) {
+
+        //     }
+        // });
+    </script>
+    
     </body>
+
 </html>
