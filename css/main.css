@@ -121,9 +121,28 @@ p{
 }
 
 .form-check-inline{
-    margin-right:15%;
+    /* margin-right:15%; */
+    /* border:1px solid; */
+    /* width:30%; */
+    margin:auto;
+    min-width: 30%;
 }
-
+.form-check-inline .for-check-input{
+    margin-right:1%;
+    /* padding:1%; */
+}
+#buttonArea{
+    margin-top:3em;
+    border:.1px solid;
+    background-size: 100% 100%;
+    background-image: url("../img/logo2.png");
+}
+#buttonArea button{
+    margin:auto;
+    margin-top:1em;
+    margin-bottom:1em;
+    width:50%
+}
 /* adjustment for mobile screen */
 @media only screen and (max-width: 800px) {
     .pageTitle, .article{
