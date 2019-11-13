@@ -116,9 +116,13 @@ p{
     padding-bottom:3%;
 }
 
+.error{
+    color:red;
+}
 
-
-
+.form-check-inline{
+    margin-right:15%;
+}
 
 /* adjustment for mobile screen */
 @media only screen and (max-width: 800px) {

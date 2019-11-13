@@ -33,7 +33,7 @@
                     <p>If you want to apply for funding, please go to <a href="https://gust.com/organizations/heartland-angels/funding_applications/responses/new" target="_blank" style="color:#7d4e07 !important;text-decoration:underline;"><b>Guest.</b></a></p>
                     <p>For all other inquiries, please fill out this form to contact Heartland Angels.</p>
                     <p>Give Your Feedback!</p>
-                    <form action="" style="width:75%;" class="needs-validation">
+                    <form action="" style="width:75%;" id="myForm">
                         <!-- <div class="row">
                             <div class="col">
                                 <div class="form-group">
@@ -50,11 +50,11 @@
                         </div> -->
                         <div class="form-group">
                                 <label for="username">Name</label>
-                                <input type="text" class="form-control" name="username" id="username" placeholder="Enter your name" required>
+                                <input type="text" class="form-control" name="username" id="username" placeholder="Enter your name" >
                         </div>
                         <div class="form-group">
                                 <label for="userEmail">Email</label>
-                                <input type="email" class="form-control" name="userEmail" id="userEmail" placeholder="Enter your email" required>
+                                <input type="email" class="form-control" name="userEmail" id="userEmail" placeholder="Enter your email" >
                         </div>
                         <div class="form-group">
                                 <label for="reasonForEnquiry">Reson for Enquiry</label>
@@ -71,6 +71,50 @@
                                 <label for="exampleFormControlTextarea1">Comment</label>
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
+                        <div id="checkBox">
+                                <h6>investment interest (select at least two):</h6>
+                                <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" name="topic">
+                                        <label class="form-check-label" for="inlineCheckbox1">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1" name="topic">
+                                        <label class="form-check-label" for="inlineCheckbox2">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1" name="topic">
+                                        <label class="form-check-label" for="inlineCheckbox3">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1" name="topic">
+                                        <label class="form-check-label" for="inlineCheckbox3">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1" name="topic">
+                                        <label class="form-check-label" for="inlineCheckbox3">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1" name="topic">
+                                        <label class="form-check-label" for="inlineCheckbox3">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1" name="topic">
+                                        <label class="form-check-label" for="inlineCheckbox3">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1" name="topic">
+                                        <label class="form-check-label" for="inlineCheckbox3">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1" name="topic">
+                                        <label class="form-check-label" for="inlineCheckbox3">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1" name="topic">
+                                        <label class="form-check-label" for="inlineCheckbox3">3</label>
+                                </div>
+                        </div>
+                        
                         <button type="submit" class="btn btn-primary">Send</button>
                               
                     </form>
@@ -83,14 +127,24 @@
     <!-- Footer -->
     <div id="footerDiv"></div>
      
-
+    <script src="./js/jquery.validate.js"></script>
     <script>
-        // var form = document.querySelector('.need-validation');
-        // form.addEventListener('submit', function(event) {
-        //     if(form.checkValidity() == false) {
+        $("#myForm").validate({
+            rules: {
+                username: {
+                    required: true,
+                    minlength:2
+                },
+                userEmail: {
+                    required: true,
+                    email: true
+                },
+                topic: {
+                    minlength: 2
+                }
 
-        //     }
-        // });
+            }
+        });
     </script>
     
     </body>
