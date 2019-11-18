@@ -162,6 +162,9 @@ p{
         padding:0.5em;
         font-size: 0.9em;
     }
+    #portfolio-imgs figure{
+        max-width:150px;
+    }
  
   }
 
