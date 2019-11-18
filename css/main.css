@@ -125,10 +125,12 @@ p{
     /* border:1px solid; */
     /* width:30%; */
     margin:auto;
-    min-width: 30%;
+    min-width: 180px;
+   
 }
 .form-check-inline .for-check-input{
     margin-right:1%;
+    
     /* padding:1%; */
 }
 #buttonArea{
@@ -154,6 +156,8 @@ p{
     .pageTitle{
         margin-top:3em;
     }
+    
+ 
   }
 
 
