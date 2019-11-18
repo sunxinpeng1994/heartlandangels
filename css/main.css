@@ -149,7 +149,7 @@ p{
 @media only screen and (max-width: 800px) {
     .pageTitle, .article{
         margin:auto; 
-        width:70%; 
+        width:80%; 
         padding:2%;
         /* border:1px solid; */
     }
@@ -160,7 +160,7 @@ p{
         
         font-family: 'Cinzel', serif;
         padding:0.5em;
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
  
   }
