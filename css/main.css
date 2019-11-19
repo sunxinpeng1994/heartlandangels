@@ -31,6 +31,7 @@ footer{
     font-family: 'Cinzel', serif;
     padding:0.5em;
     font-size: 1.2em;
+    color:white;
 }
 #primary{
     margin-top:7%;
@@ -52,11 +53,14 @@ footer{
     font-family:  'Lato', sans-serif;
     padding:1.5em;
     margin-right:1em;
+    color: white;
 }
 ul.nav li.dropdown:hover ul.dropdown-menu{
     display: block;    
 }
-
+.dropdown-menu li {
+    padding-left:3%;
+}
 
 .entry-img{
     margin:3em;
@@ -155,6 +159,7 @@ p{
 #missionContent{
     width:35vw; 
     margin:auto;
+    font-size: 1.2em;
 }
 /* adjustment for mobile screen */
 @media only screen and (max-width: 800px) {
@@ -183,7 +188,9 @@ p{
     #missionContent{
         width:70%; 
         margin:auto;
+        font-size: 1em;
     }
+    
   }
   @media only screen and (max-width: 500px) {
     #portfolio-imgs figure{
@@ -196,6 +203,7 @@ p{
     #missionContent{
         width:100%; 
         margin:auto;
+        font-size: 1em;
     }
   }
 
