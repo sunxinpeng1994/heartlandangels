@@ -13,10 +13,7 @@ body {
 }
 
 
-footer{
-    /* border:1px solid red; */
-    
-}
+
 #header{
     border:1px solid black;
     
@@ -34,7 +31,8 @@ footer{
     color:white;
 }
 #primary{
-    margin-top:7%;
+    margin-top:7vh;
+    width:61.8%; 
 }
 #primary-content{
     text-align: center;
@@ -43,6 +41,7 @@ footer{
 #secondary{
     margin-top:3%;
     text-align: center;
+    
 }
 .figure{
     padding:3%;
@@ -151,10 +150,12 @@ p{
     width:50%
 }
 
-
+#secondary figure{
+    max-width:520px;
+}
 #mission{
     font-family:  'Montserrat', sans-serif; 
-    font-size:3.6vw
+    font-size:3vw
 }
 #missionContent{
     width:35vw; 
@@ -163,11 +164,14 @@ p{
 }
 /* adjustment for mobile screen */
 @media only screen and (max-width: 800px) {
-    .pageTitle, .article{
+    .pageTitle, .article, #secondary, #primary{
         margin:auto; 
         width:80%; 
         padding:2%;
         /* border:1px solid; */
+    }
+    #primary {
+        margin-top:7vh;
     }
     .pageTitle{
         margin-top:3em;
@@ -189,6 +193,7 @@ p{
         width:70%; 
         margin:auto;
         font-size: 1em;
+
     }
     
   }
@@ -204,6 +209,13 @@ p{
         width:100%; 
         margin:auto;
         font-size: 1em;
+    }
+  }
+
+
+  @media only screen and (min-width: 1450px) {
+    #secondary figure{
+        max-width:40vw;
     }
   }
 
