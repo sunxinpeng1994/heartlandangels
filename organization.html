@@ -145,9 +145,9 @@
                                             <label class="form-check-label">Telecom</label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="for-check-input" type="checkbox" name="interests" value="other">
-                                            <label class="form-check-label">Other</label>
-                                            <input class="org-input-field" type="text" style="margin-left:1%">
+                                                <input class="for-check-input" id="otherCheckbox" type="checkbox" name="interests" value="other">
+                                                <label class="form-check-label" style="">Other</label>
+                                                <input class="" id="otherVal" type="text" class="form-control" style="margin-left:1%">
                                         </div>
                                     </div>
                         </div>
@@ -215,8 +215,13 @@
                 }
             },
             submitHandler: function(form) {
-                var values = $("#myForm").serialize();
-                console.log("send message+ " + values);
+                if($("#otherCheckbox:checked").attr("value") == "other") {
+                    console.log("other box checked");
+                    var otherInput = $("#otherVal").val();
+                    $("#otherCheckbox").attr("value", otherInput);
+                }
+                var values = $("#myForm").serializeArray();
+                console.log("send message+ " + JSON.stringify(values));
                 $(".sucBox").show();
             }
         });
