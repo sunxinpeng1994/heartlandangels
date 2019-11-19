@@ -7,6 +7,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    font-family: 'Lato', sans-serif ;
 }
 #content {
     flex: 1;
@@ -155,14 +156,24 @@ p{
 }
 #mission{
     font-family:  'Montserrat', sans-serif; 
-    font-size:3vw
+    font-size:2.5em;
 }
 #missionContent{
-    width:35vw; 
+    width:70vw; 
     margin:auto;
     font-size: 1.2em;
+    /* border:1px solid red; */
 }
+
+.entry-img img{
+    width: 70%;
+}
+
+
+
+
 /* adjustment for mobile screen */
+/* < 800px */
 @media only screen and (max-width: 800px) {
     .pageTitle, .article, #secondary, #primary{
         margin:auto; 
@@ -185,18 +196,25 @@ p{
     #portfolio-imgs figure{
         max-width:150px;
     }
+    #teamAll figure {
+        max-width: 180px;
+
+    }
     #mission{
         font-family:  'Montserrat', sans-serif; 
         font-size:2em
     }
     #missionContent{
-        width:70%; 
+        width:100%; 
         margin:auto;
         font-size: 1em;
 
     }
-    
+    .entry-img img{
+        width: 85%;
+    }
   }
+  /* < 500px */
   @media only screen and (max-width: 500px) {
     #portfolio-imgs figure{
         max-width:120px;
@@ -212,10 +230,19 @@ p{
     }
   }
 
-
+/* > 1450px */
   @media only screen and (min-width: 1450px) {
     #secondary figure{
         max-width:40vw;
+    }
+    #missionContent{
+        width:40vw; 
+        margin:auto;
+        font-size: 1.2vw;
+    }
+    #mission{
+        font-family:  'Montserrat', sans-serif; 
+        font-size:3vw;
     }
   }
 
