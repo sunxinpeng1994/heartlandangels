@@ -88,7 +88,12 @@ h4{
 p{
     font-family: inherit;
 }
-
+form .row .col{
+    min-width: 200px;
+}
+.form-check-inline {
+    padding-bottom: 1vh;
+}
 #teamAll img:hover{
     opacity: 0.3;
 }
