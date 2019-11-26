@@ -9,9 +9,7 @@ body {
     flex-direction: column;
     font-family: 'Lato', sans-serif ;
 }
-#content {
-    flex: 1;
-}
+
 
 
 
@@ -21,7 +19,8 @@ body {
 }
 #content{
     margin-bottom:10%;
-    height:95%;
+    flex: 1;
+  
 }
 
 .navbar-brand span{
