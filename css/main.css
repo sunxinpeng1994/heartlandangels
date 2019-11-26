@@ -92,7 +92,7 @@ form .row .col{
     min-width: 200px;
 }
 .form-check-inline {
-    padding-bottom: 1vh;
+    padding-bottom:1vh;
 }
 #teamAll img:hover{
     opacity: 0.3;
@@ -148,15 +148,16 @@ form .row .col{
 }
 #buttonArea{
     margin-top:3em;
-    border:.1px solid;
+    /* border:.1px solid; */
     background-size: 100% 100%;
-    background-image: url("../img/logo2.png");
+    /* background-image: url("../img/logo2.png"); */
 }
 #buttonArea button{
     margin:auto;
     margin-top:1em;
     margin-bottom:1em;
-    width:50%
+    width:50%;
+    background-color:rgb(191, 149, 35);
 }
 
 #secondary figure{
