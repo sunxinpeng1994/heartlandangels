@@ -60,6 +60,10 @@ ul.nav li.dropdown:hover ul.dropdown-menu{
 }
 .dropdown-menu li {
     padding-left:3%;
+    
+}
+.nav-item{
+    text-align: left;
 }
 
 .entry-img{
