@@ -7,14 +7,14 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    font-family: 'Lato', sans-serif ;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 
 
 
 #header{
-    border:1px solid black;
+    /* border:1px solid black; */
     
 }
 #content{
@@ -49,7 +49,7 @@ body {
     /* border:1px green dashed; */
 }
 .navbar li a {
-    font-family:  'Lato', sans-serif;
+    font-family:  'Source Sans Pro', sans-serif;
     padding:1.5em;
     margin-right:1em;
     color: white;
@@ -64,10 +64,15 @@ ul.nav li.dropdown:hover ul.dropdown-menu{
 .entry-img{
     margin:3em;
 }
-
+p {
+    font-size:18px;
+}
+.figure-caption {
+    font-size: 16px;
+}
 h1, h2, h3, h4, h5, h6 {
     clear: both;
-    font-family: "Oswald", sans-serif;
+    font-family:  'Source Sans Pro', sans-serif;
     /* font-weight: bold; */
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -177,7 +182,9 @@ form .row .col{
     width: 70%;
 }
 
-
+#eventSponsor{
+    font-size:16px;
+}
 
 
 /* adjustment for mobile screen */
@@ -221,6 +228,9 @@ form .row .col{
     .entry-img img{
         width: 85%;
     }
+    p {
+        font-size:16px;
+    }
   }
   /* < 500px */
   @media only screen and (max-width: 500px) {
@@ -252,6 +262,9 @@ form .row .col{
         font-family:  'Montserrat', sans-serif; 
         font-size:3vw;
     }
+    #eventSponsor{
+        font-size:22px;
+    }
   }
 
 
@@ -261,9 +274,68 @@ form .row .col{
 
 
 
+/** Carousel **/
 
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
 
+.jcarousel ul {
+    width: 10000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
+.jcarousel li {
+    width: 200px;
+    float: left;
+    border: 1px solid #fff;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.jcarousel img {
+    display: block;
+    max-width: 100%;
+    height: auto !important;
+    margin:auto;
+}
+
+/** Carousel Controls **/
+
+.jcarousel-control-prev,
+.jcarousel-control-next {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #4E443C;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+    font: 24px/27px Arial, sans-serif;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0 0 4px #F0EFE7;
+    -moz-box-shadow: 0 0 4px #F0EFE7;
+    box-shadow: 0 0 4px #F0EFE7;
+}
+
+.jcarousel-control-prev {
+    left: 15px;
+}
+
+.jcarousel-control-next {
+    right: 15px;
+}
 
 
 
