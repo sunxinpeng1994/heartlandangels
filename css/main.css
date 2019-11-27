@@ -16,8 +16,7 @@ body {
 
 
 #header{
-    /* border:1px solid black; */
-    
+    background:rgb(240,240,240,0.5);
 }
 #content{
     margin-bottom:10%;
@@ -31,7 +30,7 @@ body {
     padding:0.5em;
     font-size: 1.2em;
     font-weight: bold;
-    color:gray;
+    color:grey;
 }
 #primary{
     margin-top:7vh;
@@ -55,12 +54,24 @@ body {
     font-family:  'PT', serif;
     padding:1.5em;
     margin-right:1em;
-    color: gray;
+    color: grey;
     font-size:1.1rem;
 }
 ul.nav li.dropdown:hover ul.dropdown-menu{
     display: block;    
 }
+
+.navbar-toggler {
+    border-color: grey;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(40,40,40, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+
+
+
 .dropdown-menu li {
     padding-left:3%;
     
