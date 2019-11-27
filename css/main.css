@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|PT+Serif|Source+Sans+Pro&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +9,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'PT Serif', serif;
 }
 
 
@@ -25,7 +27,7 @@ body {
 
 .navbar-brand span{
     /* font-weight:600; */
-    font-family: 'Cinzel', serif;
+    font-family: 'PT', serif;
     padding:0.5em;
     font-size: 1.2em;
     font-weight: bold;
@@ -50,10 +52,11 @@ body {
     /* border:1px green dashed; */
 }
 .navbar li a {
-    font-family:  'Source Sans Pro', sans-serif;
+    font-family:  'PT', serif;
     padding:1.5em;
     margin-right:1em;
     color: gray;
+    font-size:1.1rem;
 }
 ul.nav li.dropdown:hover ul.dropdown-menu{
     display: block;    
@@ -77,7 +80,7 @@ p {
 }
 h1, h2, h3, h4, h5, h6 {
     clear: both;
-    font-family:  'Source Sans Pro', sans-serif;
+    font-family:  'PT', serif;
     /* font-weight: bold; */
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -291,7 +294,7 @@ form .row .col{
     }
     .navbar-brand span{
         
-        font-family: 'Cinzel', serif;
+        font-family: 'PT', serif;
         padding:0.5em;
         font-size: 0.9em;
     }
