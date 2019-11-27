@@ -28,7 +28,8 @@ body {
     font-family: 'Cinzel', serif;
     padding:0.5em;
     font-size: 1.2em;
-    color:white;
+    font-weight: bold;
+    color:gray;
 }
 #primary{
     margin-top:7vh;
@@ -52,7 +53,7 @@ body {
     font-family:  'Source Sans Pro', sans-serif;
     padding:1.5em;
     margin-right:1em;
-    color: white;
+    color: gray;
 }
 ul.nav li.dropdown:hover ul.dropdown-menu{
     display: block;    
