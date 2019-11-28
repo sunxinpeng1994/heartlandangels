@@ -198,9 +198,38 @@
                     var otherInput = $("#otherVal").val();
                     $("#otherCheckbox").attr("value", otherInput);
                 }
-                var values = $("#myForm").serializeArray();
-                console.log("send message+ " + JSON.stringify(values));
-                $(".sucBox").show();
+                var values = $("#myForm").serialize();
+                var dataString = decodeURIComponent(values) + "&type=individual";
+                console.log("messages: ");
+                console.log(dataString);
+                var ssURL = "https://script.google.com/macros/s/AKfycbzV2rbJVYFxrjT3HlCUWVzQaf7W4J_pP7rEz6adb76cO_j8J7c/exec?agency="+"fid";
+                var gURL = "https://script.google.com/a/daksys.com/macros/s/AKfycbwp61SIzyEBmY3Hk3ZG8NIXmNwXHQ4sp1pYlWZs4xl8/exec?" + dataString;
+                $.ajax({
+                    
+                    type: "get",
+                    url:gURL,
+                    
+                    // url: "https://script.google.com/a/daksys.com/macros/s/AKfycbwp61SIzyEBmY3Hk3ZG8NIXmNwXHQ4sp1pYlWZs4xl8/exec?"+dataString,
+                    // crossDomain: true,
+                    dataType: 'jsonp',
+                    // beforeSend: function (XMLHttpRequest) {
+         	        //     XMLHttpRequest.setRequestHeader("Access-Control-Allow-Origin", "*");
+                    // },
+                    success: function(response) {
+                        console.log(response);
+                        console.log("works");
+                        $(".sucBox").show();
+                    },
+                    error: function(err) {
+                        console.log("error: ");
+                        console.log(err.responseText);
+                    }
+                });
+
+
+
+
+                
             }
         });
         

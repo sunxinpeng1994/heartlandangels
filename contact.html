@@ -94,7 +94,8 @@
             },
             submitHandler: function(form) {
                 var values = $("#myForm").serialize();
-                console.log("send message+ " + values);
+                console.log("messages: ");
+                console.log(decodeURIComponent(values));
                 $(".sucBox").show();
             }
         });
