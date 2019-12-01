@@ -89,8 +89,8 @@
                                             <label class="form-check-label" for="chemical">Chemical</label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="for-check-input" type="checkbox" name="interests" value="consumerp" id="consumerp">
-                                            <label class="form-check-label" for="consumerp">Consumer Products</label>
+                                            <input class="for-check-input" type="checkbox" name="interests" value="consumerproducts" id="consumerproducts">
+                                            <label class="form-check-label" for="consumerproducts">Consumer Products</label>
                                         </div>
                                         <div class="form-check form-check-inline">
                                             <input class="for-check-input" type="checkbox" name="interests" value="construction" id="construction">
@@ -113,8 +113,8 @@
                                             <label class="form-check-label" for="fintech">Fintech</label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="for-check-input" type="checkbox" name="interests" value="foodandbev" id="foodandbev">
-                                            <label class="form-check-label" for="foodandbev">Food &amp; Beverage</label>
+                                            <input class="for-check-input" type="checkbox" name="interests" value="foodandbeverages" id="foodandbeverages">
+                                            <label class="form-check-label" for="foodandbeverages">Food &amp; Beverage</label>
                                         </div>
                                         <div class="form-check form-check-inline">
                                             <input class="for-check-input" type="checkbox" name="interests" value="healthcare" id="healthcare">
@@ -125,8 +125,8 @@
                                             <label class="form-check-label" for="manufacturing">Manufacturing</label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="for-check-input" type="checkbox" name="interests" value="mediaandpub" id="mediaandpub">
-                                            <label class="form-check-label" for="mediaandpub">Media &amp; Publishing</label>
+                                            <input class="for-check-input" type="checkbox" name="interests" value="mediaandpublishing" id="mediaandpublishing">
+                                            <label class="form-check-label" for="mediaandpublishing">Media &amp; Publishing</label>
                                         </div>
                                         <div class="form-check form-check-inline">
                                             <input class="for-check-input" type="checkbox" name="interests" value="nanotechnology" id="nanotechnology">
@@ -145,8 +145,8 @@
                                             <label class="form-check-label" for="telecom">Telecom</label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="for-check-input" id="other" type="checkbox" name="interests" value="other">
-                                            <label class="form-check-label" style="" for="other">Other</label>
+                                            <input class="for-check-input" id="otherCheckbox" type="checkbox" name="interests" value="other">
+                                            <label class="form-check-label" style="" for="otherCheckbox">Other</label>
                                             <input class="" id="otherVal" type="text" style="margin-left:1%">
                                         </div>
                                     </div>
@@ -220,9 +220,28 @@
                     var otherInput = $("#otherVal").val();
                     $("#otherCheckbox").attr("value", otherInput);
                 }
-                var values = $("#myForm").serializeArray();
-                console.log("send message+ " + JSON.stringify(values));
-                $(".sucBox").show();
+                var values = $("#myForm").serialize();
+                var dataString = decodeURIComponent(values) + "&type=orgnization";
+                console.log("messages: ");
+                console.log(dataString);
+                
+                var gURL = "https://script.google.com/a/daksys.com/macros/s/AKfycbwp61SIzyEBmY3Hk3ZG8NIXmNwXHQ4sp1pYlWZs4xl8/exec?" + dataString;
+                $.ajax({
+                    
+                    type: "get",
+                    url:gURL,
+                    dataType: 'jsonp',
+                    
+                    success: function(response) {
+                        console.log(response);
+                        console.log("works");
+                        $(".sucBox").show();
+                    },
+                    error: function(err) {
+                        console.log("error: ");
+                        console.log(err.responseText);
+                    }
+                });
             }
         });
         

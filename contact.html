@@ -94,9 +94,27 @@
             },
             submitHandler: function(form) {
                 var values = $("#myForm").serialize();
+                var dataString = decodeURIComponent(values) + "&type=contact";
                 console.log("messages: ");
-                console.log(decodeURIComponent(values));
-                $(".sucBox").show();
+                console.log(dataString);
+                
+                var gURL = "https://script.google.com/a/daksys.com/macros/s/AKfycbwp61SIzyEBmY3Hk3ZG8NIXmNwXHQ4sp1pYlWZs4xl8/exec?" + dataString;
+                $.ajax({
+                    
+                    type: "get",
+                    url:gURL,
+                    dataType: 'jsonp',
+                    
+                    success: function(response) {
+                        console.log(response);
+                        console.log("works");
+                        $(".sucBox").show();
+                    },
+                    error: function(err) {
+                        console.log("error: ");
+                        console.log(err.responseText);
+                    }
+                });
             }
         });
         
