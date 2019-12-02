@@ -94,11 +94,12 @@
             },
             submitHandler: function(form) {
                 var values = $("#myForm").serialize();
+             
                 var dataString = decodeURIComponent(values) + "&type=contact";
                 console.log("messages: ");
                 console.log(dataString);
                 
-                var gURL = "https://script.google.com/a/daksys.com/macros/s/AKfycbwp61SIzyEBmY3Hk3ZG8NIXmNwXHQ4sp1pYlWZs4xl8/exec?" + dataString;
+                var gURL = "https://script.google.com/macros/s/AKfycbyMe3izE_HzcXqAC5h5OC8NSpTntZ0R6EiuSvnvPMay4MfxpJCc/exec?" + dataString;
                 $.ajax({
                     
                     type: "get",
