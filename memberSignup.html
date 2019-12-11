@@ -114,21 +114,21 @@
                                 <div class="col">
                                     <div class="form-group">
                                         <label >Member Full Name:</label>
-                                        <input type="text" id="firstName" class="form-control required"  placeholder="First name" oninput="removeInvalidClass(this)" >
-                                        <input type="text" id="middleName" class="form-control" placeholder="Middle name(s)" oninput="removeInvalidClass(this)" >
-                                        <input type="text" id="lastName"  class="form-control required" placeholder="Last name" oninput="removeInvalidClass(this)">
-                                        <input type="text" id="suffix"  class="form-control" placeholder="Suffix" oninput="removeInvalidClass(this)" >
+                                        <input type="text" id="firstName" name="firstName" class="form-control required"  placeholder="First name" oninput="removeInvalidClass(this)" >
+                                        <input type="text" id="middleName" name="middleName" class="form-control" placeholder="Middle name(s)" oninput="removeInvalidClass(this)" >
+                                        <input type="text" id="lastName" name="lastName" class="form-control required" placeholder="Last name" oninput="removeInvalidClass(this)">
+                                        <input type="text" id="suffix" name="suffix" class="form-control" placeholder="Suffix" oninput="removeInvalidClass(this)" >
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="form-group">
                                         <label>Member Residential Address:</label>
-                                        <input type="text" id="address1" class="form-control required" placeholder="Address line 1" oninput="removeInvalidClass(this)">
-                                        <input type="text" id="address2" class="form-control" placeholder="Address line 2" oninput="removeInvalidClass(this)">
-                                        <input type="text" id="city" class="form-control required" placeholder="City" oninput="removeInvalidClass(this)" >
+                                        <input type="text" id="address1" name="address1" class="form-control required" placeholder="Address line 1" oninput="removeInvalidClass(this)">
+                                        <input type="text" id="address2" name="address2" class="form-control" placeholder="Address line 2" oninput="removeInvalidClass(this)">
+                                        <input type="text" id="city" name="city" class="form-control required" placeholder="City" oninput="removeInvalidClass(this)" >
                                         <div class="row">
-                                            <div class="col"><input type="text" id="state" class="form-control required" placeholder="State" oninput="removeInvalidClass(this)"></div>
-                                            <div class="col"><input type="text" id="zipCode" class="form-control required" placeholder="ZIP" oninput="removeInvalidClass(this)"></div>
+                                            <div class="col"><input type="text" id="state" name="state" class="form-control required" placeholder="State" oninput="removeInvalidClass(this)"></div>
+                                            <div class="col"><input type="text" id="zipCode" name="zipCode" class="form-control required" placeholder="ZIP" oninput="removeInvalidClass(this)"></div>
                                         </div>
                                         
                                     </div>
@@ -137,11 +137,11 @@
                             </div>
                         <div class="form-group">
                                 <label  >Member Email for correspondence:</label>
-                                <input type="email" id="memberEmail" class="form-control required" placeholder="Email address" oninput="removeInvalidClass(this)">
+                                <input type="email" id="memberEmail" name="memberEmail" class="form-control required" placeholder="Email address" oninput="removeInvalidClass(this)">
                         </div>
                         <div class="form-group">
                                 <label>Member phone number for correspondence:</label>
-                                <input type="text" id="phoneNumber" class="form-control required" placeholder="Phone number" oninput="removeInvalidClass(this)" >
+                                <input type="text" id="phoneNumber" name="phoneNumber" class="form-control required" placeholder="Phone number" oninput="removeInvalidClass(this)" >
                         </div>
 
                         <p>Heartland permits both Accredited and Non-Accredited investors to become Members. Please check all that apply:</p>
@@ -151,21 +151,21 @@
                         <div class="boxDiv" id="501Box">
                                 <p class="error" id="error501" style="display: none;">select one at least</p>
                                 <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="5011" onclick="checkAtLeastOne();">
-                                        <label class="form-check-label" for="5011">
-                                                I earned income that exceeded $200,000 (or $300,000 together with a spouse) in each of the prior two years, and I reasonably expect the same income for the current year. I am therefore an “Accredited Investor”.
+                                        <input class="form-check-input" type="checkbox" id="5011" name="501" value="I earned income that exceeded $200,000 (or $300,000 together with a spouse) in each of the prior two years, and I reasonably expect the same income for the current year. I am therefore an 'Accredited Investor'." onclick="checkAtLeastOne();">
+                                        <label class="form-check-label" for="5011" >
+                                                I earned income that exceeded $200,000 (or $300,000 together with a spouse) in each of the prior two years, and I reasonably expect the same income for the current year. I am therefore an "Accredited Investor".
                                         </label>
                                 </div>
                                 <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="5012" onclick="checkAtLeastOne();">
-                                        <label class="form-check-label" for="5012">
-                                                I have a net worth over $1 million, either alone or together with a spouse, excluding the value of my primary residence. I am therefore an “Accredited Investor”.
+                                        <input class="form-check-input" type="checkbox" id="5012" name="501" value="I have a net worth over $1 million, either alone or together with a spouse, excluding the value of my primary residence. I am therefore an 'Accredited Investor'." onclick="checkAtLeastOne();" >
+                                        <label class="form-check-label" for="5012" name="501" value="">
+                                                I have a net worth over $1 million, either alone or together with a spouse, excluding the value of my primary residence. I am therefore an "Accredited Investor".
                                         </label>
                                 </div>
                                 <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="5013" onclick="checkAtLeastOne();">
+                                        <input class="form-check-input" type="checkbox" id="5013" name="501" value="Neither of the above apply. I am therefore a 'Non-Accredited Investor'." onclick="checkAtLeastOne();">
                                         <label class="form-check-label" for="5013">
-                                                Neither of the above apply. I am therefore a “Non-Accredited Investor”.
+                                                Neither of the above apply. I am therefore a "Non-Accredited Investor".
                                         </label>
                                 </div>
                         </div>
@@ -393,7 +393,7 @@
      
     </body>
     <script>
-        var currentTab = 3; // Current tab is set to be the first tab (0)
+        var currentTab = 0; // Current tab is set to be the first tab (0)
         showTab(currentTab); // Display the current tab
 
         function showTab(n) {
@@ -413,6 +413,7 @@
             }
             // ... and run a function that displays the correct step indicator:
             fixStepIndicator(n)
+            $("html, body").animate({ scrollTop: 0 }, "slow");
         }
 
         function nextPrev(n) {
@@ -428,7 +429,13 @@
             // if you have reached the end of the form... :
             if (currentTab >= x.length) {
                 //...the form gets submitted:
-                document.getElementById("regForm").submit();
+                console.log("submit form");
+                var values = $("#regForm").serialize();
+                var dataString = decodeURIComponent(values);
+                console.log(dataString);
+                //redirect to payment page
+                window.location.href = './payment.html';
+                //document.getElementById("regForm").submit();
                 return false;
             }
             // Otherwise, display the correct tab:
