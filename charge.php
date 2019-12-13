@@ -23,7 +23,7 @@
         "description" => "membership fee",
         "customer" => $customer->id
     ));
-    print_r($customer);
+    
     print_r($charge);
     // $intent = \Stripe\PaymentIntent::create([
     //     'amount' => 1099,
